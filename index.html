@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <script>
+        // создание объектов
+        str1 = new String("test");
+        str2 = "slovo";
+        x = str1.length;
+        //вывод на сайт
+        document.writeln(x);
+        // вывод в косноль
+        console.log("длинна строки: " + x);
+
+        // вывод символа с помощью индекса
+        sym = str2.charAt(4); 
+        document.writeln(sym);
+
+        // сложение строк 
+        document.writeln(str1.concat(str2));
+
+        // возращение подстроки 
+        address = "petrov.vi@mail.ru"
+        i = address.indexOf("@") // нашли индекс символа @
+        user = address.substr(0,i) // вывели строку до символа @
+        domen = address.substr(i+1) // вывели строку после символа @
+        document.writeln("Пользователь: ", user, " Домен: ",domen)
+
+
+        function str(s1, s2, n) {
+        return s1.slice(0,n) + s2 + s1.slice(n)
+        }
+        x = str("Привет студентам", " , ", 16)
+        y = str("обучающимся в группе!", "2527", 13)
+        document.writeln(x)
+        document.writeln(y)
+
+
+        arr = new Array(3);
+        arr[0] = "Что-то";
+        arr[1] = 777;
+        arr[2] = "Еще что-то";
+
+        document.writeln(arr[0]);
+        document.writeln(arr[1]);
+        document.writeln(arr[2]);
+
+        arr2 = new Array("о", "а", "о");
+        arr3 = arr.concat(arr2);
+        document.writeln(arr3);
+
+        document.writeln(arr3.join(" - "))
+
+    </script>
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
